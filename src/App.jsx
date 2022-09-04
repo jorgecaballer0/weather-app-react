@@ -4,6 +4,7 @@ import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
 import Search from "./components/Search/Search";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./utils/api";
 import ForecastWeather from "./components/ForecastWeather/ForecastWeather";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <ForecastWeather data={forecast} />}

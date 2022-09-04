@@ -21,7 +21,6 @@ const search = ({ onSearchChange }) => {
           }),
         };
       })
-
       .catch((err) => console.error(err));
   };
 
@@ -32,7 +31,8 @@ const search = ({ onSearchChange }) => {
 
   return (
     <AsyncPaginate
-      placeholder="Search for city"
+      className="mx-12 my-4 rounded-full shadow-lg"
+      placeholder="Ingresá una ciudad"
       debounceTimeout={600}
       value={search}
       onChange={handleOnChange}

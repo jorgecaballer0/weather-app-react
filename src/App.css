@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +8,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to top, #475569, #bdc3c7); 
+  background: linear-gradient(to bottom, #475569, #bdc3c7); 
+  backdrop-filter: blur(15px);
+}
+
