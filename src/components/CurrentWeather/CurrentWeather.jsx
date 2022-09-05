@@ -6,7 +6,6 @@ import {
   UilTemperaturePlus,
   UilTemperatureMinus,
   UilTornado,
-  UilWindsock,
 } from "@iconscout/react-unicons";
 
 const CurrentWeather = ({ data }) => {
