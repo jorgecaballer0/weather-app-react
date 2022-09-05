@@ -25,7 +25,7 @@ const ForecastWeather = ({ data }) => {
 
   return (
     <>
-      <h1 className="pt-4 text-2xl font-bold text-center text-white">
+      <h1 className="pt-4 text-2xl font-bold text-center text-white sm:text-xl">
         Próximos {WEEK_DAYS.length} días
       </h1>
       <Accordion allowZeroExpanded>
@@ -33,7 +33,7 @@ const ForecastWeather = ({ data }) => {
           <AccordionItem key={idx}>
             <AccordionItemHeading>
               <AccordionItemButton>
-                <div className="flex items-center justify-between px-4 m-2 mx-12 text-base text-white h-14 bg-slate-600 rounded-xl">
+                <div className="flex items-center justify-between px-4 m-2 mx-12 text-base text-white h-14 bg-slate-600 rounded-xl sm:flex-wrap">
                   <div className="flex items-center justify-start">
                     <img
                       src={`icons/${item.weather[0].icon}.png`}
@@ -55,7 +55,7 @@ const ForecastWeather = ({ data }) => {
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <div className="grid grid-cols-3 mx-12 text-center text-white rounded-lg bg-slate-500 [&>div]:flex [&>div]:justify-center [&>div]:items-center [&>div]:py-2 [&>div>p]:px-2 [&>div>p]:font-bold [&>div>p]:text-gray-300">
+              <div className="grid grid-cols-3 mx-12 text-center text-white rounded-lg bg-slate-500 [&>div]:flex [&>div]:justify-center [&>div]:items-center [&>div]:py-2 [&>div>p]:px-2 [&>div>p]:font-bold [&>div>p]:text-gray-300 sm:grid-cols-1">
                 <div>
                   <p>Sensación Térmica:</p>
                   <label>{Math.round(item.main.feels_like)}°C</label>

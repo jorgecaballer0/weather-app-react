@@ -11,27 +11,27 @@ import {
 const CurrentWeather = ({ data }) => {
   return (
     <>
-      <section className="flex justify-around p-4 mx-12 text-center text-white shadow-lg bg-slate-700 rounded-xl">
+      <section className="flex justify-around p-4 mx-12 text-center text-white shadow-lg sm:flex-col bg-slate-700 rounded-xl">
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-center">
             <p className="flex items-center text-xl font-bold">
               <UilLocationPoint size={20} />
               {data.city}
             </p>
-            <p className="text-base italic uppercase">
+            <p className="text-base italic uppercase sm:text-sm sm:py-2">
               {data.weather[0].description}
             </p>
           </div>
-          <div className="flex flex-row items-center justify-start">
+          <div className="flex flex-row items-center justify-start sm:mx-auto sm:py-5">
             <img
               src={`icons/${data.weather[0].icon}.png`}
               alt="weather"
-              className="w-1/2"
+              className="w-1/2 sm:w-12"
             />
             <p className="text-4xl font-bold">{Math.round(data.main.temp)}°C</p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-1 [&>div]:flex [&>div]:items-center [&>div]:justify-center [&>div>span]:text-gray-300 [&>div]:text-sm [&>div>span]:mr-2 [&>div>span]:ml-1 [&>div>span]:font-bold">
+        <div className="flex flex-col items-center justify-center gap-1 [&>div]:flex [&>div]:items-center [&>div]:justify-center [&>div>span]:text-gray-300 [&>div]:text-sm [&>div>span]:mr-2 [&>div>span]:ml-1 [&>div>span]:font-bold sm:[&>div]:text-xs">
           <p className="text-xl font-bold uppercase">Detalles</p>
           <div>
             <UilThermometer size={18} color="#fff" />
