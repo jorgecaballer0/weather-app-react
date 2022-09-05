@@ -36,7 +36,7 @@ const ForecastWeather = ({ data }) => {
                 <div className="flex items-center justify-between px-4 m-2 mx-12 text-base text-white h-14 bg-slate-600 rounded-xl">
                   <div className="flex items-center justify-start">
                     <img
-                      src={`/src/assets/icons/${item.weather[0].icon}.png`}
+                      src={`icons/${item.weather[0].icon}.png`}
                       alt="weather"
                       className="w-10"
                     />

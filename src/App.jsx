@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
 import Search from "./components/Search/Search";
-import { WEATHER_API_URL, WEATHER_API_KEY } from "./utils/api";
+import { WEATHER_API_URL, WEATHER_API_KEY } from "./services/api";
 import ForecastWeather from "./components/ForecastWeather/ForecastWeather";
 import Navbar from "./components/Navbar/Navbar";
 
@@ -30,7 +30,7 @@ function App() {
       .catch((error) => console.log(error));
   };
 
-  // console.log(currentWeather);
+  console.log(currentWeather);
   // console.log(forecast);
 
   return (

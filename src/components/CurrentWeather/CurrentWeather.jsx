@@ -24,7 +24,7 @@ const CurrentWeather = ({ data }) => {
           </div>
           <div className="flex flex-row items-center justify-start">
             <img
-              src={`/src/assets/icons/${data.weather[0].icon}.png`}
+              src={`icons/${data.weather[0].icon}.png`}
               alt="weather"
               className="w-1/2"
             />
