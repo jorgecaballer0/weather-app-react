@@ -11,3 +11,5 @@
 - React Js 
 - TailwindCSS
 - Unicons
+
+> Actualmente solo funciona para buscar ciudades de +1000000 de habitantes.
