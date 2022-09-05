@@ -30,14 +30,14 @@ function App() {
       .catch((error) => console.log(error));
   };
 
-  console.log(currentWeather);
-  console.log(forecast);
+  // console.log(currentWeather);
+  // console.log(forecast);
 
   return (
     <>
       <Navbar />
       <Search onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}
+      {currentWeather && <CurrentWeather data={currentWeather}/>}
       {forecast && <ForecastWeather data={forecast} />}
     </>
   );
